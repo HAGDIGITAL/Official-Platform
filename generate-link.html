@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HAG DIGITAL | Undangan Digital</title>
+
+    <meta name="theme-color" content="#35030F">
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="assets/icon/hagdigital.png">
+
+    <meta name="description"
+          content="HAG DIGITAL - Undangan digital elegan, praktis dan mudah dibagikan.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ==============================
+        NAVBAR
+================================ -->
+
+<header class="navbar">
+
+    <!-- LOGO -->
+    <a href="index.html" class="brand-logo">
+        <img src="assets/logo.png" alt="HAG DIGITAL">
+    </a>
+
+    <!-- MENU HP -->
+    <div class="menu-wrapper">
+
+        <button class="menu-toggle" id="menuToggle">
+            <span class="menu-symbol">☰</span>
+            <span>MENU</span>
+        </button>
+
+        <nav class="nav-menu" id="navMenu">
+
+            <a href="index.html">
+                <span class="menu-icon">🏠</span>
+                <span class="menu-label">Beranda</span>
+            </a>
+
+            <a href="katalog.html">
+                <span class="menu-icon">📚</span>
+                <span class="menu-label">Katalog</span>
+            </a>
+
+            <a href="cara-pesan.html">
+                <span class="menu-icon">🛒</span>
+                <span class="menu-label">Cara Pesan</span>
+            </a>
+
+            <a href="generate-link.html">
+                <span class="menu-icon">🔗</span>
+                <span class="menu-label">Generate Link</span>
+            </a>
+
+            <a href="kontak.html">
+                <span class="menu-icon">📞</span>
+                <span class="menu-label">Kontak</span>
+            </a>
+
+            <a href="payment.html">
+                <span class="menu-icon">💸</span>
+                <span class="menu-label">Payment</span>
+            </a>
+            
+            <a href="tentang.html">
+                <span class="menu-icon">ℹ️</span>
+                <span class="menu-label">Tentang</span>
+            </a>
+
+            <button
+                id="musicButton"
+                class="music-menu-item"
+                type="button">
+
+                <span class="menu-icon">🎵</span>
+                <span class="menu-label">Musik</span>
+
+            </button>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<section class="page-hero">
+
+<h1>Generate Link Tamu</h1>
+
+<p>
+Buat link undangan personal untuk setiap tamu.
+</p>
+
+</section>
+
+<main class="page-hero1">
+
+    <div class="generator-box">
+
+        <div class="section-heading" style="margin-bottom:30px;">
+            <span>HAG DIGITAL</span>
+            <h2>Generate Link & Pesan Undangan</h2>
+            <p>Buat link undangan personal untuk banyak tamu sekaligus.</p>
+        </div>
+
+
+        <!-- JENIS UCAPAN -->
+        <div class="form-group">
+
+            <label for="greetingType">
+                Pilih Jenis Ucapan
+            </label>
+
+            <select id="greetingType">
+
+                <option value="umum">
+                    Umum
+                </option>
+
+                <option value="formal">
+                    Formal
+                </option>
+
+                <option value="islam">
+                    Islami
+                </option>
+
+                <option value="kristen">
+                    Kristen
+                </option>
+
+                <option value="hindu">
+                    Hindu
+                </option>
+
+                <option value="buddha">
+                    Buddha
+                </option>
+
+                <option value="konghucu">
+                    Konghucu
+                </option>
+
+            </select>
+
+        </div>
+
+
+
+
+
+        <!-- PREVIEW UCAPAN -->
+        <div class="greeting-preview">
+
+            <label>
+                Preview Pesan
+            </label>
+
+            <div id="greetingPreview">
+
+                Silakan pilih jenis ucapan dan bahasa
+                untuk melihat contoh pesan.
+
+            </div>
+
+        </div>
+
+
+        <!-- NAMA MEMPELAI 1 -->
+        <div class="form-group">
+
+            <label for="brideName">
+                Nama Mempelai 1
+            </label>
+
+            <input
+                type="text"
+                id="brideName"
+                placeholder="Contoh: Utari Nur Hanifah"
+                required
+            >
+
+        </div>
+
+
+        <!-- NAMA MEMPELAI 2 -->
+        <div class="form-group">
+
+            <label for="groomName">
+                Nama Mempelai 2
+            </label>
+
+            <input
+                type="text"
+                id="groomName"
+                placeholder="Contoh: Abdul Karim Fajar Mauludin"
+                required
+            >
+
+        </div>
+
+
+        <!-- LINK UNDANGAN -->
+        <div class="form-group">
+
+            <label for="invitationLink">
+                Link Undangan
+            </label>
+
+            <input
+                type="url"
+                id="invitationLink"
+                placeholder="https://hagdigital.id/Utari-Fajar/"
+                required
+            >
+
+        </div>
+
+
+        <!-- NAMA TAMU MASSAL -->
+        <div class="form-group">
+
+            <label for="guestNames">
+                Nama Tamu
+            </label>
+
+            <textarea
+                id="guestNames"
+                rows="10"
+                placeholder="Contoh:
+
+Maul
+Udin
+Hanifah
+Nur
+Ibu Utari
+Bapak Karim"
+                required
+            ></textarea>
+
+            <small>
+                Masukkan satu nama tamu pada setiap baris.
+            </small>
+
+        </div>
+
+
+        <!-- BUTTON GENERATE -->
+        <button
+            type="button"
+            id="generateAll"
+            class="btn btn-primary-dark">
+
+            Buat Semua Link & Pesan
+
+        </button>
+
+
+        <!-- HASIL -->
+        <div
+            class="generated-result"
+            id="generatedResult"
+            style="display:none;">
+
+            <strong>
+                Hasil Generate
+            </strong>
+
+            <div
+                class="generated-link"
+                id="generatedLink">
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+<!-- ==============================
+        MUSIC PLAYER
+================================ -->
+
+<audio id="bgMusic" loop>
+    <source src="assets/music/jinggle-hag-digital.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

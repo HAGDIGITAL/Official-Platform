@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HAG DIGITAL | Undangan Digital</title>
+
+    <meta name="theme-color" content="#35030F">
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="assets/icon/hagdigital.png">
+
+    <meta name="description"
+          content="HAG DIGITAL - Undangan digital elegan, praktis dan mudah dibagikan.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ==============================
+        NAVBAR
+================================ -->
+
+<header class="navbar">
+
+    <!-- LOGO -->
+    <a href="index.html" class="brand-logo">
+        <img src="assets/logo.png" alt="HAG DIGITAL">
+    </a>
+
+    <!-- MENU HP -->
+    <div class="menu-wrapper">
+
+        <button class="menu-toggle" id="menuToggle">
+            <span class="menu-symbol">☰</span>
+            <span>MENU</span>
+        </button>
+
+        <nav class="nav-menu" id="navMenu">
+
+            <a href="index.html">
+                <span class="menu-icon">🏠</span>
+                <span class="menu-label">Beranda</span>
+            </a>
+
+            <a href="katalog.html">
+                <span class="menu-icon">📚</span>
+                <span class="menu-label">Katalog</span>
+            </a>
+
+            <a href="cara-pesan.html">
+                <span class="menu-icon">🛒</span>
+                <span class="menu-label">Cara Pesan</span>
+            </a>
+
+            <a href="generate-link.html">
+                <span class="menu-icon">🔗</span>
+                <span class="menu-label">Generate Link</span>
+            </a>
+
+            <a href="kontak.html">
+                <span class="menu-icon">📞</span>
+                <span class="menu-label">Kontak</span>
+            </a>
+
+            <a href="payment.html">
+                <span class="menu-icon">💸</span>
+                <span class="menu-label">Payment</span>
+            </a>
+            
+            <a href="tentang.html">
+                <span class="menu-icon">ℹ️</span>
+                <span class="menu-label">Tentang</span>
+            </a>
+
+            <button
+                id="musicButton"
+                class="music-menu-item"
+                type="button">
+
+                <span class="menu-icon">🎵</span>
+                <span class="menu-label">Musik</span>
+
+            </button>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<section class="page-hero">
+
+<h1>Payment</h1>
+
+<p>
+Silahkan Pilih Metode Pembayaran.
+</p>
+
+</section>
+
+
+<main class="page-hero1">
+
+    <div class="generator-box">
+
+        <h2>QRIS</h2>
+
+        <div class="qris-container">
+            <img
+                src="assets/payment/qris.jpeg"
+                alt="QRIS HAG DIGITAL"
+                class="qris-image"
+                id="qrisImage">
+        </div>
+
+        <p>
+            Mohon kirimkan bukti pembayaran kepada Admin HAG DIGITAL. 🙏
+        </p>
+    <br>
+        <a
+        href="https://wa.me/6285129965012?text=Halo+Admin+HAG+DIGITAL%2C+saya+sudah+melakukan+pembayaran+untuk+undangan+digital.+Berikut+saya+lampirkan+bukti+pembayarannya.+Mohon+untuk+dikonfirmasi.+Terima+kasih."
+        target="_blank"
+        class="btn btn-primary-dark">
+
+        Chat WhatsApp
+
+    </a>
+
+    </div>
+
+
+
+
+        <!-- QRIS FULLSCREEN -->
+        <div class="qris-modal" id="qrisModal">
+
+            <button class="qris-close" id="qrisClose">
+                &times;
+            </button>
+
+            <div class="qris-modal-content">
+
+                <img
+                    src="assets/payment/qris.jpeg"
+                    alt="QRIS HAG DIGITAL"
+                    class="qris-fullscreen">
+
+                <a
+                    href="assets/payment/qris.jpeg"
+                    download="QRIS-HAG-DIGITAL.jpeg"
+                    class="qris-download">
+                    Download QRIS
+                </a>
+
+            </div>
+
+            
+        </div>
+    <br>
+
+
+
+</div>
+
+<br>
+
+
+<div class="generator-box">
+
+    <h2>
+        Payment Via Rekening Lainya
+    </h2>
+
+    <br>
+
+
+    <!-- =========================
+         BANK PEMBAYARAN
+    ========================= -->
+
+    <div class="bank-list">
+
+
+        <!-- =========================
+             BCA
+        ========================= -->
+
+        <div class="bank-card">
+
+            <div class="bank-header">
+
+                <img
+                    src="assets/payment/bca.png"
+                    alt="BCA"
+                    class="bank-logo">
+
+                <span class="bank-name">
+                    Bank BCA
+                </span>
+
+            </div>
+
+            <div class="bank-account">
+
+                <div class="account-number">
+
+                    <span>
+                        No. Rek :
+                    </span>
+
+                    <span
+                        class="bank-number"
+                        data-account="7131804117">
+                        7131804117
+                    </span>
+
+                </div>
+
+                <span class="bank-owner">
+                    (a.n. Utari Nur Hanifah)
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             SEA BANK
+        ========================= -->
+
+        <div class="bank-card">
+
+            <div class="bank-header">
+
+                <img
+                    src="assets/payment/seabank.webp"
+                    alt="SEABANK"
+                    class="bank-logo">
+
+                <span class="bank-name">
+                    SEA BANK
+                </span>
+
+            </div>
+
+            <div class="bank-account">
+
+                <div class="account-number">
+
+                    <span>
+                        No. Rek :
+                    </span>
+
+                    <span
+                        class="bank-number"
+                        data-account="901472150483">
+                        901472150483
+                    </span>
+
+                </div>
+
+                <span class="bank-owner">
+                    (a.n. Utari Nur Hanifah)
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             DANA
+        ========================= -->
+
+        <div class="bank-card">
+
+            <div class="bank-header">
+
+                <img
+                    src="assets/payment/dana.jpg"
+                    alt="DANA"
+                    class="bank-logo">
+
+                <span class="bank-name">
+                    DANA
+                </span>
+
+            </div>
+
+            <div class="bank-account">
+
+                <div class="account-number">
+
+                    <span>
+                        No. Rek :
+                    </span>
+
+                    <span
+                        class="bank-number"
+                        data-account="0895615715344">
+                        0895615715344
+                    </span>
+
+                </div>
+
+                <span class="bank-owner">
+                    (a.n. Abdul Karim Fajar Mauludin)
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             SHOPEEPAY
+        ========================= -->
+
+        <div class="bank-card">
+
+            <div class="bank-header">
+
+                <img
+                    src="assets/payment/shopeepay.png"
+                    alt="SHOPEEPAY"
+                    class="bank-logo">
+
+                <span class="bank-name">
+                    SHOPEE PAY
+                </span>
+
+            </div>
+
+            <div class="bank-account">
+
+                <div class="account-number">
+
+                    <span>
+                        No. Rek :
+                    </span>
+
+                    <span
+                        class="bank-number"
+                        data-account="0895615715344">
+                        0895615715344
+                    </span>
+
+                </div>
+
+                <span class="bank-owner">
+                    (a.n. Abdul Karim Fajar Mauludin)
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         NOTIFIKASI COPY
+    ========================= -->
+
+    <div
+        id="copyNotification"
+        class="copy-notification">
+
+        Nomor rekening berhasil disalin
+
+    </div>
+
+
+    <br>
+
+    <p>
+        Mohon kirimkan bukti pembayaran kepada Admin HAG DIGITAL. 🙏
+    </p>
+
+    <br>
+
+    <a
+        href="https://wa.me/6285129965012?text=Halo+Admin+HAG+DIGITAL%2C+saya+sudah+melakukan+pembayaran+untuk+undangan+digital.+Berikut+saya+lampirkan+bukti+pembayarannya.+Mohon+untuk+dikonfirmasi.+Terima+kasih."
+        target="_blank"
+        class="btn btn-primary-dark">
+
+        Chat WhatsApp
+
+    </a>
+
+</div>
+
+</main>
+<!-- ==============================
+        MUSIC PLAYER
+================================ -->
+
+<audio id="bgMusic" loop>
+    <source src="assets/music/jinggle-hag-digital.mp3" type="audio/mpeg">
+</audio>
+
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
