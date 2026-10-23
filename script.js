@@ -212,7 +212,7 @@ if (generateAll) {
                                 ? "Selesai diproses"
                                 : "Belum diproses";
 
-                            statusText.style.color = completed ? "#267343" : "#666";
+                            statusText.style.color = completed ? "#267343" : "#FF0000";
 
                             if (copyButton) {
                                 copyButton.disabled = completed;
